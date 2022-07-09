@@ -1,11 +1,14 @@
 import React,{useState} from "react";
 import axios from "axios";
+import Result from "./result";
 
 
 export default function Dictionary(){
     let [word,setWord]=useState("");
+    let [data,setData] = useState("");
+   
     function handelRespons(res){
-    let data = res.data[0];
+    setData(res.data[0]);
     console.log(data);
     }
 
@@ -13,7 +16,6 @@ export default function Dictionary(){
         event.preventDefault();
         let url=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
         axios.get(url).then(handelRespons);
-
     }
 
     function handelWordChange(event){
@@ -25,6 +27,7 @@ export default function Dictionary(){
                 <input type= "search" placeholder="Type your word" onChange={handelWordChange}/>
                
             </form>
+            <Result data={data}/>
         </div>
     );
 }
