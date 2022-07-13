@@ -5,11 +5,10 @@ import Result from "./result";
 
 export default function Dictionary(){
     let [word,setWord]=useState("");
-    let [data,setData] = useState("");
+    let [data,setData] = useState(null);
    
     function handelRespons(res){
     setData(res.data[0]);
-    console.log(data);
     }
 
     function handelSearch(event){
