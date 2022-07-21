@@ -10,7 +10,7 @@ export default function App() {
       <h1><img src={logo} className ="logo" alt="logo"/>Dictionary With Narges</h1>
       </header>
       <div className="main">
-        <Dictionary />
+        <Dictionary defaultWord="free"/>
       </div>
       <footer className="tex-center">
         open source code by <a href="https://www.shecodesfoundation.org/candidates/narges-safari-sohrforouzani-iranian" rel="noreferrer">Narges</a></footer>

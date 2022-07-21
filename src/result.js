@@ -22,8 +22,10 @@ export default function Result (props){
 
     <p>{data.meanings.map(function(meaning,index){
         return <div key={index}>
+            <section>
             <Meaning meaning={meaning}/>
             <Synonyms synonyms={meaning.synonyms}/>
+            </section>
             </div>})}
     </p>
 </div>
