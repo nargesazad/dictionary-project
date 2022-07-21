@@ -13,7 +13,7 @@ export default function App() {
         <Dictionary defaultWord="free"/>
       </div>
       <footer className="tex-center">
-        open source code by <a href="https://www.shecodesfoundation.org/candidates/narges-safari-sohrforouzani-iranian" rel="noreferrer">Narges</a></footer>
+        open source code by <a href="https://www.shecodesfoundation.org/candidates/narges-safari-sohrforouzani-iranian" rel="noreferrer">Narges</a> at <a href="https://github.com/nargesazad/dictionary-project" rel="noreferrer">GitHub</a></footer>
     </div></div>
   );
 }
