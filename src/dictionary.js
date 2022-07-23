@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import axios from "axios";
 import Result from "./result";
+import Photos from "./photos";
 
 
 
@@ -41,7 +42,7 @@ export default function Dictionary(props){
                
             </form>
             </section>
-            {/* <section><Photos word={word}/></section> */}
+            <section><Photos word={word}/></section>
             <Result data={data}/>
         </div>
     );
