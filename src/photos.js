@@ -13,8 +13,8 @@ function HandelPhotos(response){
 }
 
 axios.get({apiUrl},{headers: headers })
-    .then(HandelPhotos)
-   if(Photos){
+    .then(HandelPhotos);
+if(photos){
     return(
         <div className="photos row">
             {photos.map(function(photo,index){
