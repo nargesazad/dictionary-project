@@ -49,7 +49,7 @@ text-align: left;
 }
 
 .photos img{
-    border: 10px solid gray;
-    border-radius: 7px;
+    border: 5px solid #CAB4D4;
+    border-radius: 5px;
     margin: 5px;
 }

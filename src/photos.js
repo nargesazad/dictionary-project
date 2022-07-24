@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./result.css"
 
 export default function Photos(props){
@@ -12,8 +12,8 @@ function HandelPhotos(response){
     setPhotos(response.data.photos);
 }
 
-axios.get({apiUrl},{headers: headers })
-    .then(HandelPhotos);
+useEffect(()=>{axios.get(apiUrl,{headers: headers })
+.then(HandelPhotos);},[props.word]) 
 if(photos){
     return(
         <div className="photos row">
